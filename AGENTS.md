@@ -1,0 +1,3 @@
+- Keep portfolio page-specific layout and animation rules in `src/routes/portfolio.css` so the portfolio styling remains separate from global design tokens.
+- Define technology brand colors as global semantic tokens and select them with icon-slug classes in the portfolio stylesheet, keeping icon styling out of inline JSX.
+- Use the shared dropdown menu for the contact number's call and WhatsApp choice, keeping both destinations accessible as native links.

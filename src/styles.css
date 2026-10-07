@@ -1,0 +1,125 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-display: var(--display-font);
+  --font-sans: var(--body-font);
+}
+
+:root {
+  --radius: 0.5rem;
+  --display-font: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --body-font: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.22 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --primary: oklch(0.24 0 0);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0 0);
+  --secondary-foreground: var(--foreground);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.48 0 0);
+  --accent: oklch(0.95 0 0);
+  --accent-foreground: var(--foreground);
+  --destructive: oklch(0.58 0.21 27);
+  --destructive-foreground: var(--background);
+  --border: oklch(0.9 0 0);
+  --input: var(--border);
+  --ring: oklch(0.55 0 0);
+  --portfolio-text-soft: oklch(0.43 0 0);
+  --portfolio-project-surface: oklch(0.985 0 0);
+  --portfolio-shadow-soft: 0 4px 18px oklch(0.2 0 0 / 8%);
+  --brand-androidstudio: oklch(0.79304 0.18026 153.998);
+  --brand-css: oklch(0.44027 0.16030 303.373);
+  --brand-cursor: oklch(0.00000 0.00000 0.000);
+  --brand-django: oklch(0.27056 0.04928 164.059);
+  --brand-docker: oklch(0.65511 0.16130 247.550);
+  --brand-express: oklch(0.14479 0.00000 89.876);
+  --brand-git: oklch(0.62903 0.21794 29.227);
+  --brand-github: oklch(0.20577 0.00158 17.285);
+  --brand-go: oklch(0.69451 0.13027 223.853);
+  --brand-html5: oklch(0.62544 0.19130 35.712);
+  --brand-javascript: oklch(0.89591 0.18235 101.215);
+  --brand-kotlin: oklch(0.58775 0.24128 288.635);
+  --brand-mongodb: oklch(0.63604 0.15426 143.682);
+  --brand-mysql: oklch(0.55647 0.08440 242.877);
+  --brand-nodedotjs: oklch(0.64255 0.13331 139.425);
+  --brand-npm: oklch(0.56275 0.18429 25.695);
+  --brand-php: oklch(0.60256 0.08656 280.369);
+  --brand-postgresql: oklch(0.55985 0.18823 266.400);
+  --brand-postman: oklch(0.70599 0.19128 39.159);
+  --brand-python: oklch(0.54893 0.10526 246.667);
+  --brand-react: oklch(0.83204 0.11668 218.688);
+  --brand-springboot: oklch(0.69616 0.16544 135.135);
+  --brand-sqlite: oklch(0.33391 0.07306 237.139);
+  --brand-typescript: oklch(0.56710 0.13988 253.305);
+  --brand-vite: oklch(0.57439 0.27028 297.497);
+  --status-online: oklch(0.68 0.19 148);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    color-scheme: light;
+  }
+
+  a {
+    color: inherit;
+  }
+}
