@@ -14,7 +14,7 @@ export function ContactForm() {
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!PUBLIC_KEY) {
-      setStatus("Email sending is not configured yet. Set VITE_EMAILJS_PUBLIC_KEY.");
+      setStatus("Return'error!'");
       return;
     }
     const form = e.currentTarget;
