@@ -138,12 +138,14 @@ const projects = [
     description:
       "A web application for creating, organizing, and retrieving personal information with JWT authorization and frontend-backend integration.",
     tags: ["Django", "React", "SQLite", "SimpleJWT"],
+    href: "https://notes-app.vercel.app/"
   },
   {
     title: "Movie Application",
     description:
       "A responsive React project using component-based architecture, API-driven content, and dynamic user interfaces.",
     tags: ["React", "JavaScript", "APIs"],
+    href: "https://movie-app-psi.vercel.app/",
   },
   {
     title: "School Management System",
@@ -156,6 +158,7 @@ const projects = [
     description:
       "Concepts and prototypes for rental, barbershop, photographer booking, coffee menu, clothing e-commerce, and company management systems.",
     tags: ["Systems Design", "Operations", "Data Management"],
+    href: "https://atekas-homes-hub.vercel.app/"
   },
   {
     title: "Digital Records & IT Support",
@@ -172,13 +175,13 @@ const projects = [
   {
     title: "Urban Cuts POS System",
     description: "A point-of-sale system for the Urban Cuts barbershop.",
-    tags: ["Point of Sale", "Web Application"],
+    tags: ["Point of Sale", "Web Application", "Business Management", "React", "Node.js", "PostgreSQL", "M-Pesa integration"],
     href: "https://urban-cuts.vercel.app/",
   },
   {
     title: "Simple Websites",
     description: "A collection of simple, responsive website projects.",
-    tags: ["Web Design", "Responsive"],
+    tags: ["Web Design", "Responsive", "HTML", "CSS", "JavaScript"],
     href: "https://6928328da9bb3427146aa94e--musical-torrone-a35988.netlify.app/",
   },
 ];
@@ -192,6 +195,18 @@ const competencies = [
   "Data Analysis",
   "AI Workflows",
   "Mobile Development",
+  "Web Development",
+  "Information Management",
+  "System Design",
+  "Project Management",
+  "Team Collaboration",
+  "Problem Solving",
+  "Communication Skills",
+  "Technical Documentation",
+  "User Experience",
+  "Cloud Services",
+  "Version Control",
+  "Continuous Integration",
 ];
 
 const WHATSAPP = "https://wa.me/254797558913";
@@ -313,7 +328,7 @@ function Index() {
             <div className="section-heading">
               <h2>Information systems mindset with hands-on software delivery.</h2>
               <p>
-                I am an Information Science student at the University of Nairobi focused on
+                I am an Information Science student at the University of Nairobi(graduating december 11 2026) focused on
                 Information Technology, Information Systems, digital information management,
                 software development, and AI-assisted productivity.
               </p>
