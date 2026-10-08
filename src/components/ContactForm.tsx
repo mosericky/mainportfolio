@@ -14,7 +14,7 @@ export function ContactForm() {
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (!PUBLIC_KEY) {
-      setStatus("Return'error!'");
+      setStatus("Return 'error!'");
       return;
     }
     const form = e.currentTarget;
