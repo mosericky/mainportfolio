@@ -3,8 +3,8 @@ import emailjs from "@emailjs/browser";
 import { Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const SERVICE_ID = import.meta.env["VITE_EMAILJS_SERVICE_ID"] as string | undefined;
-const TEMPLATE_ID = import.meta.env["VITE_EMAILJS_TEMPLATE_ID"] as string | undefined;
+const SERVICE_ID = "service_exix12k";
+const TEMPLATE_ID = "template_dk0kcan";
 const PUBLIC_KEY = import.meta.env["VITE_EMAILJS_PUBLIC_KEY"] as string | undefined;
 
 export function ContactForm() {
@@ -13,8 +13,8 @@ export function ContactForm() {
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
-      setStatus("Email sending is not configured yet.");
+    if (!PUBLIC_KEY) {
+      setStatus("Email sending is not configured yet. Set VITE_EMAILJS_PUBLIC_KEY.");
       return;
     }
     const form = e.currentTarget;
