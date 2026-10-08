@@ -132,6 +132,7 @@ const projects = [
     description:
       "Database-driven applications with authentication, REST APIs, CRUD workflows, responsive interfaces, and administrative dashboards.",
     tags: ["React", "TypeScript", "Node.js", "PostgreSQL", "Drizzle ORM"],
+    href: "https://project8-rkb5.vercel.app/"
   },
   {
     title: "Notes & Information Management App",
